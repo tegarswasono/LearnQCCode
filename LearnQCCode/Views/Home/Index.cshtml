@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<hr/>
+<div style="text-align:center">
+    <h2>This One is The Result of QCCode</h2>
+    <br />
+    <h5 style="font-style:italic;">TicketID: @ViewBag.TicketId</h5>
+    <img src="@ViewBag.QrCodeUri" width="500" class="img-thumbnail" />
+</div>
