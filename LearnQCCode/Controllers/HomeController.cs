@@ -76,7 +76,7 @@ namespace LearnQCCode.Controllers
         private AlternateView GetEmbeddedImage(String filePath)
         {
             LinkedResource res = new LinkedResource(filePath, new ContentType("image/png"));
-            LinkedResource res2 = new LinkedResource(GenerateBarcode(Guid.NewGuid()), new ContentType("image/Bmp"));
+            LinkedResource res2 = new LinkedResource(GenerateBarcode(Guid.NewGuid()), new ContentType("image/png"));
 
             res.ContentId = Guid.NewGuid().ToString();
             res2.ContentId = Guid.NewGuid().ToString();
